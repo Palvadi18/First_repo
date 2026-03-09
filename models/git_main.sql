@@ -1,0 +1,1 @@
+create table git_main(tab_name varchar(50))
