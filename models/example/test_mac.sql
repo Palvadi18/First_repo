@@ -1,0 +1,1 @@
+select {{macro_name()}}

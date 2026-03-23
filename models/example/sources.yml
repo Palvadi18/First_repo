@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    database: BRONZE_DB
+    schema: BRONZE_SC
+
+    tables:
+      - name: BRONZE_STAGE

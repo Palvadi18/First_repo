@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: Silver_transformation_layer
+    columns:
+      - name: CUSTOMER_ID
+      - name: CUSTOMER_NAME
+      - name: EMAIL
+        tests:
+          - not_null
+      - name: STATUS
+        tests:
+          - accepted_values:
+              values: ['SHIPPED','DELIVERED','PENDING','PROCESSING','UNKNOWN','INVALID']
