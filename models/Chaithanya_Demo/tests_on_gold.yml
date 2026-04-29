@@ -1,0 +1,8 @@
+models:
+  - name: gold_to_mart
+    columns:
+        - name : ORDER_DATE
+          tests:
+            - not_null
+            - unique
+        

@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: raww
+    database: BRONZE_DB
+    schema: BRONZE_SC
+    tables:
+      - name: bronze_stage
+        loaded_at_field: UPDATED_AT
+        freshness:
+          warn_after:
+            count: 24
+            period: hour
+          error_after:
+            count: 48
+            period: hour

@@ -1,0 +1,27 @@
+version: 2
+ 
+models:
+  - name: silver_transformation
+    columns:
+      - name: ORDER_ID
+        tests:
+          - not_null
+          - unique
+ 
+      - name: CUSTOMER_ID
+        tests:
+          - not_null
+ 
+      - name: QUANTITY
+        tests:
+          - not_null
+ 
+      - name: PRICE
+        tests:
+          - not_null
+ 
+      - name: RECORD_STATUS
+        tests:
+          - accepted_values:
+             values: ['VALID', 'REJECTED_NULL_CUSTOMER', 'REJECTED_NULL_ORDER', 'INVALID_QUANTITY', 'INVALID_PRICE']
+ 
