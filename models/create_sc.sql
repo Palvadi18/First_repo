@@ -1,1 +1,1 @@
-create schema PR_SC()
+select 1 id, 'chaithanya'  name 
